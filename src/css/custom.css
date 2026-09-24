@@ -1,0 +1,178 @@
+/**
+ * Theme tuned for reading Japanese + Vietnamese lesson notes.
+ * Light: warm paper. Dark: low-glare night reading (warm charcoal, soft text).
+ */
+
+:root {
+  --ifm-color-primary: #9a3412;
+  --ifm-color-primary-dark: #7c2d12;
+  --ifm-color-primary-darker: #6b2710;
+  --ifm-color-primary-darkest: #4a1c0c;
+  --ifm-color-primary-light: #c2410c;
+  --ifm-color-primary-lighter: #ea580c;
+  --ifm-color-primary-lightest: #f97316;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base:
+    'Noto Sans', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', 'Meiryo',
+    system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family:
+    'Noto Serif', 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', Georgia,
+    'Times New Roman', serif;
+  --ifm-background-color: #faf8f5;
+  --ifm-navbar-background-color: #fffdf9;
+  --docusaurus-highlighted-code-line-bg: rgba(154, 52, 18, 0.08);
+}
+
+/* --- Night reading: warm charcoal, muted text, soft accents --- */
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Softer amber (not neon orange) */
+  --ifm-color-primary: #c9a27a;
+  --ifm-color-primary-dark: #b8926a;
+  --ifm-color-primary-darker: #ad8760;
+  --ifm-color-primary-darkest: #8f6d4c;
+  --ifm-color-primary-light: #d4b48f;
+  --ifm-color-primary-lighter: #dfc6a8;
+  --ifm-color-primary-lightest: #ead9c4;
+
+  /* Surfaces — warm near-black */
+  --ifm-background-color: #12100e;
+  --ifm-background-surface-color: #1a1714;
+  --ifm-navbar-background-color: #161310;
+  --ifm-footer-background-color: #0e0c0a;
+  --ifm-card-background-color: #1a1714;
+  --ifm-dropdown-background-color: #1a1714;
+
+  /* Text — warm stone, never pure white */
+  --ifm-font-color-base: #c8c2ba;
+  --ifm-font-color-base-inverse: #12100e;
+  --ifm-heading-color: #ddd8d0;
+  --ifm-color-content: #c8c2ba;
+  --ifm-color-content-secondary: #8f877c;
+  --ifm-link-color: #c9a27a;
+  --ifm-link-hover-color: #ddbc96;
+  --ifm-menu-color: #a39b91;
+  --ifm-menu-color-active: #ddbc96;
+  --ifm-navbar-link-color: #b5aea4;
+  --ifm-navbar-link-hover-color: #ddd8d0;
+  --ifm-toc-link-color: #8f877c;
+  --ifm-breadcrumb-color-active: #c9a27a;
+
+  /* Borders / dividers — low contrast */
+  --ifm-color-emphasis-100: #1a1714;
+  --ifm-color-emphasis-200: #24201c;
+  --ifm-color-emphasis-300: #322e28;
+  --ifm-color-emphasis-400: #3f3a33;
+  --ifm-color-emphasis-500: #575049;
+  --ifm-color-emphasis-600: #6f675e;
+  --ifm-color-emphasis-700: #8f877c;
+  --ifm-color-emphasis-800: #b5aea4;
+  --ifm-color-emphasis-900: #ddd8d0;
+  --ifm-hr-border-color: #2a2621;
+  --ifm-toc-border-color: #2a2621;
+  --ifm-table-border-color: #2a2621;
+  --ifm-color-primary-contrast-background: #1f1a15;
+  --ifm-color-primary-contrast-foreground: #ead9c4;
+
+  /* Interactive overlays — soft */
+  --ifm-hover-overlay: rgba(255, 245, 230, 0.04);
+  --ifm-menu-color-background-active: rgba(201, 162, 122, 0.1);
+  --ifm-menu-color-background-hover: rgba(255, 245, 230, 0.04);
+  --ifm-navbar-search-input-background-color: #1a1714;
+  --ifm-navbar-search-input-color: #c8c2ba;
+
+  /* Code / tables */
+  --ifm-code-background: #1c1916;
+  --ifm-pre-background: #1c1916;
+  --ifm-table-stripe-background: rgba(255, 245, 230, 0.025);
+  --docusaurus-highlighted-code-line-bg: rgba(201, 162, 122, 0.12);
+
+  /* Admonitions — muted */
+  --ifm-color-info-contrast-background: #152028;
+  --ifm-color-info-dark: #6b9bb0;
+  --ifm-color-success-contrast-background: #15241c;
+  --ifm-color-success-dark: #6a9a78;
+  --ifm-color-warning-contrast-background: #2a2214;
+  --ifm-color-warning-dark: #c4a36a;
+  --ifm-color-danger-contrast-background: #2a1614;
+  --ifm-color-danger-dark: #c08078;
+}
+
+/* Japanese / mixed script readability */
+.markdown {
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+.markdown table {
+  display: table;
+  width: 100%;
+}
+
+.markdown code {
+  font-family:
+    'Noto Sans Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+}
+
+/* Dark: softer selection + code blocks */
+[data-theme='dark'] ::selection {
+  background: rgba(201, 162, 122, 0.28);
+  color: #eeeae4;
+}
+
+[data-theme='dark'] .markdown h1,
+[data-theme='dark'] .markdown h2,
+[data-theme='dark'] .markdown h3 {
+  font-weight: 600;
+}
+
+[data-theme='dark'] .theme-code-block,
+[data-theme='dark'] .prism-code {
+  background-color: #1c1916 !important;
+  box-shadow: none;
+}
+
+[data-theme='dark'] .theme-doc-markdown a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+[data-theme='dark'] .table-of-contents__link--active,
+[data-theme='dark'] .table-of-contents__link:hover {
+  color: #ddbc96;
+}
+
+[data-theme='dark'] .pagination-nav__link {
+  border-color: #2a2621;
+  background: #1a1714;
+}
+
+[data-theme='dark'] .pagination-nav__link:hover {
+  border-color: #3f3a33;
+  background: #1f1c18;
+}
+
+[data-theme='dark'] .navbar {
+  box-shadow: 0 1px 0 #2a2621;
+}
+
+[data-theme='dark'] .footer--dark,
+[data-theme='dark'] .footer {
+  background-color: var(--ifm-footer-background-color);
+  color: var(--ifm-color-content-secondary);
+}
+
+[data-theme='dark'] .card,
+[data-theme='dark'] .theme-admonition {
+  box-shadow: none;
+  border-color: #2a2621;
+}
+
+[data-theme='dark'] img {
+  opacity: 0.92;
+}
+
+[data-theme='dark'] img:hover {
+  opacity: 1;
+}

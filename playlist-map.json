@@ -1,0 +1,31 @@
+{
+  "playlist": "https://www.youtube.com/playlist?list=PLbBhikLbVlB0GaIO_rfgGtkTqSS70lS_k",
+  "playlist_title": "Tiếng Nhật Minna 1 - 25 bài ngữ pháp",
+  "lessons": [
+    {"id": 1, "videoId": "YBI4nM5HC4c", "file": "bai-01-cau-danh-tu.md", "title": "Câu danh từ", "jp": "N1 は N2 です", "status": "done"},
+    {"id": 2, "videoId": "8GaOeIUHvfc", "file": "bai-02-chi-thi-tu.md", "title": "Chỉ thị từ", "jp": "これ・それ・あれ／この・その・あの"},
+    {"id": 3, "videoId": "6tn9uUphZx4", "file": "bai-03-dia-diem.md", "title": "Địa điểm", "jp": "ここ・そこ・あそこ・どこ"},
+    {"id": 4, "videoId": "eUlvDkLF78I", "file": "bai-04-thoi-gian.md", "title": "Thời gian · giờ", "jp": "いま／何時ですか"},
+    {"id": 5, "videoId": "bNfsfokfcfY", "file": "bai-05-dong-tu-di-den-ve.md", "title": "Động từ đi · đến · về", "jp": "行きます・来ます・帰ります"},
+    {"id": 6, "videoId": "EcMPO0vFGU8", "file": "bai-06-tan-ngu-o.md", "title": "Tân ngữ を", "jp": "〜を V ます／何を"},
+    {"id": 7, "videoId": "xpCIReYtPYA", "file": "bai-07-tro-tu-de-ni-he.md", "title": "Trợ từ で・に・へ", "jp": "道具・場所・目的"},
+    {"id": 8, "videoId": "Vue8Wms6lzM", "file": "bai-08-tinh-tu.md", "title": "Tính từ", "jp": "い形容詞・な形容詞"},
+    {"id": 9, "videoId": "Aq-r3hKzkcw", "file": "bai-09-co-o.md", "title": "Có · ở", "jp": "あります・います"},
+    {"id": 10, "videoId": "Wxypr-m5QhM", "file": "bai-10-ton-tai-vi-tri.md", "title": "Tồn tại · vị trí", "jp": "N が あります／います"},
+    {"id": 11, "videoId": "v9LKjDu35zI", "file": "bai-11-muon-lam.md", "title": "Lượng từ · số lần", "jp": "〜つ／〜人／〜回／ぐらい／だけ"},
+    {"id": 12, "videoId": "K8YBRVsQCyU", "file": "bai-12-thi-qua-khu.md", "title": "Quá khứ · so sánh", "jp": "〜でした／より／のほうが／いちばん"},
+    {"id": 13, "videoId": "9No9ipFAe7A", "file": "bai-13-thich-muon-co.md", "title": "Muốn có · muốn làm", "jp": "ほしいです／〜たいです"},
+    {"id": 14, "videoId": "Aagd7lfJCVg", "file": "bai-14-the-te-nho-va.md", "title": "Thể て · nhờ vả", "jp": "〜てください／〜ています"},
+    {"id": 15, "videoId": "TeLwIYPaKiA", "file": "bai-15-duoc-phep-cam.md", "title": "Được phép · cấm", "jp": "〜てもいい／〜てはいけません"},
+    {"id": 16, "videoId": "eY-bkEnUlMs", "file": "bai-16-noi-cau-the-te.md", "title": "Nối câu thể て", "jp": "〜て、〜／〜てから"},
+    {"id": 17, "videoId": "8q5OEcOL_oo", "file": "bai-17-dung-phai-lam.md", "title": "Đừng · phải làm", "jp": "〜ないでください／〜なければなりません"},
+    {"id": 18, "videoId": "Ud1BsWWi9Jg", "file": "bai-18-the-dictionary-kha-nang.md", "title": "Thể dictionary · khả năng", "jp": "辞書形／できます"},
+    {"id": 19, "videoId": "pnU_-IS8CFM", "file": "bai-19-tung-trai-liet-ke.md", "title": "Từng trải · liệt kê", "jp": "〜たことがあります／〜たり〜たり"},
+    {"id": 20, "videoId": "SFZrTvsadRY", "file": "bai-20-du-dinh-y-dinh.md", "title": "Thể thông thường", "jp": "普通形"},
+    {"id": 21, "videoId": "4DrfaWgGAYU", "file": "bai-21-nghi-noi-rang.md", "title": "Nghĩ · nói rằng", "jp": "〜と思います／〜と言います"},
+    {"id": 22, "videoId": "dteyn-jIypY", "file": "bai-22-menh-de-bo-nghia.md", "title": "Mệnh đề bổ nghĩa", "jp": "名詞修飾"},
+    {"id": 23, "videoId": "IWwTaqu1pfc", "file": "bai-23-khi-luc.md", "title": "Khi · lúc", "jp": "〜とき"},
+    {"id": 24, "videoId": "jrLHhG4OFW8", "file": "bai-24-cho-nhan.md", "title": "Cho · nhận", "jp": "あげる・もらう・くれる"},
+    {"id": 25, "videoId": "co07Xjavkfo", "file": "bai-25-dieu-kien.md", "title": "Điều kiện", "jp": "〜と／〜たら"}
+  ]
+}
