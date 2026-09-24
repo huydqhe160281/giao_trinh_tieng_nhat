@@ -1,0 +1,55 @@
+---
+description: Markdown lesson format for Minna N5 and kana docs
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Lesson / kana markdown format
+
+## Frontmatter (required)
+
+```yaml
+---
+sidebar_label: Bài N. Tiêu đề ngắn
+sidebar_position: <number>
+---
+```
+
+Kana pages live under `docs/kana/` with their own `sidebar_position`.
+
+## Title + source
+
+```markdown
+# Bài N — Tiêu đề · 文法ポイント
+
+> Nguồn: [Học tiếng Nhật N5 cùng Minato — Bài N](https://www.youtube.com/watch?v=VIDEO_ID&list=PLbBhikLbVlB0GaIO_rfgGtkTqSS70lS_k)
+```
+
+Video IDs: `playlist-map.json`. Titles must match **video content** (not stale filenames).
+
+## Section order (Minna lessons)
+
+1. Lời khuyên / mục tiêu  
+2. Từng điểm ngữ pháp (cấu trúc → phân tích → ví dụ bảng)  
+3. Tổng kết  
+4. Hội thoại mẫu (optional)  
+5. Bài tập tự kiểm tra  
+
+Use `:::tip` / `:::info` / `:::warning` sparingly.
+
+## Japanese writing
+
+| Case | Format |
+|------|--------|
+| Kanji noun/adj | `学生（がくせい）` · `静か（しずか）` |
+| Verb with kanji | `行（い）きます` · `食（た）べます` |
+| Pure kana / loan | `わたし` · `これ` · `ベトナム` — no fake reading |
+| 何 | `なに` before を/も; else often `なん` |
+
+Example tables: `| Tiếng Việt | Tiếng Nhật |`
+
+## After editing
+
+1. Update `sidebars.ts` if adding a new doc id  
+2. Update `docs/intro.md` index table if needed  
+3. `npm run build`

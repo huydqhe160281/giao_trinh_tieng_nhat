@@ -1,0 +1,37 @@
+---
+description: Core project conventions for Giáo án Minna N5 (Docusaurus)
+alwaysApply: true
+---
+
+# Giáo án Minna N5 — core
+
+Static **Docusaurus 3** study site (Vietnamese + Japanese). Repo root = app root (no `website/` folder).
+
+## Stack & commands
+
+- Node **20** (see `.nvmrc`)
+- `npm start` · `npm run build` · output `build/`
+- Vercel: root repo, Output Directory `build`
+
+## Layout
+
+| Path | Role |
+|------|------|
+| `docs/` | Lesson + kana markdown |
+| `docs/kana/` | Hiragana / katakana / tenten |
+| `sidebars.ts` | Sidebar order (must stay in sync with new docs) |
+| `playlist-map.json` | Minato video IDs ↔ lesson files |
+| `src/css/custom.css` | Theme (warm light + soft dark) |
+
+## Non-negotiables
+
+- Learner may **not** know kanji → every kanji word needs `漢字（ひらがな）` (or verb stem `行（い）きます`)
+- Prefer structured notes over raw YouTube transcripts
+- Match existing lesson style: mirror `docs/bai-01-cau-danh-tu.md` / `docs/bai-02-chi-thi-tu.md`
+- After doc/sidebar changes: run `npm run build` (broken links throw)
+
+## Do not
+
+- Reintroduce nested `website/` app folder
+- Use romaji as the primary reading for kanji (hiragana only)
+- Leave `:::info Đang soạn` stubs when finishing a lesson

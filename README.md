@@ -30,9 +30,12 @@ Tuỳ chọn env: `SITE_URL=https://ten-mien-cua-ban.vercel.app`
 japan_learn/
 ├── docs/                 ← kana + 25 bài Minna
 ├── src/
-├── static/
+├── .cursor/rules/        ← Cursor rules (theo repo)
+├── .cursor/skills/       ← skill soạn bài
 ├── docusaurus.config.ts
 ├── sidebars.ts
 ├── package.json
 └── vercel.json
 ```
+
+Sau `git pull` trên máy khác, mở project trong Cursor — rules/skill đi kèm repo, giữ đúng format giáo án.

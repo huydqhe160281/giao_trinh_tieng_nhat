@@ -1,0 +1,23 @@
+---
+description: Docusaurus sidebar, config, and theme conventions
+globs: "{sidebars.ts,docusaurus.config.ts,src/**/*,vercel.json,package.json}"
+alwaysApply: false
+---
+
+# Docusaurus conventions
+
+## Sidebar (`sidebars.ts`)
+
+Order: `intro` → category **Bảng chữ cái** → category **25 bài Minna N5**.  
+New doc → add its id to the correct category list (filename without `.md`).
+
+## Config
+
+- `url` already resolves Vercel/`SITE_URL`; don't hardcode localhost for production
+- `onBrokenLinks: 'throw'` — keep it
+- Dark theme tweaks live in `src/css/custom.css` (soft warm night reading)
+
+## Deploy
+
+- `vercel.json` at repo root; Output `build`
+- Do not nest the app under `website/` again
